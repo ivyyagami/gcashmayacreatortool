@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gcash & Maya Creator Tool</title>
+    <meta name="description" content="Gcash & Maya Creator Tool - Secure Login">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gcash <span style="color: purple;">& Maya</span> Creator Tool</h2>
+        <p>Created by <span style="color: purple; font-weight: bold;">Freddy Lagarde</span></p>
+
+        <input type="text" id="username" class="input-field" placeholder="Username" aria-label="Username">
+        <p class="error-message" id="username-error">Username must be at least 12 characters.</p>
+
+        <div class="password-container">
+            <input type="password" id="password" class="input-field" placeholder="Password" aria-label="Password">
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+        </div>
+        <p class="error-message" id="password-error">Password must be at least 18 characters.</p>
+
+        <button class="login-button" id="login-button" onclick="startLoadingSequence()">Log In</button>
+
+        <div class="loading" id="loading">
+            <div class="loading-circle"></div>
+            <p>Verifying Account...</p>
+        </div>
+
+        <p>Message <span style="color: purple; font-weight: bold;">Freddy Lagarde</span> if you don't have an account!
+        </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
