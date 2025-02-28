@@ -1,0 +1,45 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+    width: 200px;
+}
+.button-gcash {
+    background-color: #0079C2;
+    color: white;
+    box-shadow: 0px 4px 10px #0079C2;
+}
+.button-maya {
+    background-color: #112432;
+    color: #75eea5;
+    box-shadow: 0px 4px 10px #112432;
+}
+.button-gcash:hover {
+    background-color: #005a91;
+}
+.button-maya:hover {
+    background-color: #0e1c25;
+}
