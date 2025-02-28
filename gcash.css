@@ -1,0 +1,96 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+}
+.input-field {
+    display: block;
+    margin: 12px auto;
+    padding: 14px;
+    width: 85%;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.input-field:focus {
+    outline: none;
+    border: 2px solid purple;
+}
+.button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+.button-gcash {
+    background: linear-gradient(45deg, #0079C2, #005a91);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 121, 194, 0.6);
+}
+.button-maya {
+    background: linear-gradient(45deg, #112432, #0e1c25);
+    color: #75eea5;
+    box-shadow: 0px 4px 10px rgba(17, 36, 50, 0.6);
+}
+.button-otp {
+    background: linear-gradient(45deg, purple, darkviolet);
+    color: white;
+}
+.button-otp.disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+.button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.loading-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.loading-circle {
+    width: 35px;
+    height: 35px;
+    border: 4px solid white;
+    border-top: 4px solid purple;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+.loading-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bbb;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gcash & Maya Creator Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="maya.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Gcash <span style="color: purple;">& Maya</span> Creator Tool</h2>
+        <p>Created by <span style="color: purple; font-weight: bold;">Freddy Lagarde</span></p>
+    
+        <input type="text" id="firstName" class="input-field" placeholder="First Name" maxlength="20" oninput="validateInputs()">
+        <input type="text" id="middleName" class="input-field" placeholder="Middle Name (Optional)" maxlength="20">
+        <input type="text" id="lastName" class="input-field" placeholder="Last Name" maxlength="20" oninput="validateInputs()">
+        <input type="text" id="phoneNumber" class="input-field" placeholder="Enter Number (Starts with 09)" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateInputs();">
+        <input type="password" id="password" class="input-field" placeholder="Enter Password" maxlength="12" oninput="validateInputs()">
+    
+        <button class="random-button" onclick="generateRandomName()">RANDOM</button>
+        <button class="done-button" id="doneButton" onclick="startLoadingSequence()" disabled>DONE</button>
+
+        <div class="loading-circle"></div>
+        <p class="loading-text"></p>
+    
+        <div id="otpSection" style="display: none;">
+            <h4>Enter OTP</h4>
+            <input type="text" id="otp" class="input-field" placeholder="Enter OTP (6 digits)" maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateOTP();" disabled>
+            <button class="done-button" id="otpButton" onclick="startOtpLoading()" disabled>DONE</button>
+            
+            <div class="otp-loading-circle"></div>
+            <p class="otp-loading-text"></p>
+        </div>
+    </div>
+    <script src="maya.js"></script>
+</body>
+</html>
