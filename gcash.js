@@ -24,11 +24,11 @@ function startLoadingSequence() {
         let loadingContainer = document.querySelector(".loading-container");
         let loadingText = document.querySelector(".loading-text");
         let messages = [
-            { text: "Verifying Code...", delay: 4000 },
-            { text: "Creating Name...", delay: 4000 },
-            { text: "Creating Birthday...", delay: 5000 },
+            { text: "Verifying Code...", delay: 5000 },
+            { text: "Creating Name...", delay: 10000 },
+            { text: "Creating Birthday...", delay: 8000 },
             { text: "Creating Place of Birth...", delay: 5000 },
-            { text: "Finalizing Account... (MPIN, Others, etc.)", delay: 3000 },
+            { text: "Finalizing Account... (MPIN, Others, etc.)", delay: 10000 },
             { text: "✅ Account Successfully Created!", delay: 3000 }
         ];
 
