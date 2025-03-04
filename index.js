@@ -28,7 +28,7 @@ function startLoadingSequence() {
 
     setTimeout(() => {
         if (username === "freddyl" && password === "freddyl999") {
-            window.location.href = "choose.html";
+            window.location.href = "pakyu.html";
         } else {
             alert("Invalid Username or Password");
             loading.style.display = "none";
